@@ -1,0 +1,23 @@
+{
+  "name": "practicaasincronismo",
+  "version": "1.0.0",
+  "description": "\"Practicas de asincronismo en javascript\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "async": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LopezJoseMarcel/PracticaAsincronismo.git"
+  },
+  "author": "Jose MarceL Lopez",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/LopezJoseMarcel/PracticaAsincronismo/issues"
+  },
+  "homepage": "https://github.com/LopezJoseMarcel/PracticaAsincronismo#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}

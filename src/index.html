@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;500&family=Quicksand:wght@300;500;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    body {
+     font-family: 'Fira Sans', sans-serif;
+     font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    background-image: URL("https://wallpaperaccess.com/full/637645.jpg");
+    }
+    #super-title{
+     position: relative;
+     width:269.5px ;
+     height: 92.5px;
+    
+     
+    }
+
+    .full-container {
+        margin-top: 0px;
+        display: grid;
+       grid-template-columns: repeat(auto-fill, 240px);
+       gap: 26px;
+    place-content: center;
+    }
+
+    .full-card {
+      background: linear-gradient(180deg, #3FFE31 0%, #5DF871 
+      17.05%, #CFF4D7 44.15%, #68F587 73.82%, #3CFE2E 97.22%);
+      width: 200px;
+      height: 350px;
+      border-radius: 8px;
+      border: 2px solid #000000;
+    }
+
+    .card-information {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .character-image{
+        width: 150px;
+        height: 150px;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        margin: 24px 24px 8px 24px;
+    }
+    .card-text{
+        width: 100%;
+        
+    }
+    h4{
+        text-align: center;
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    
+    ul{
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        margin: auto 24px 24px 24px;
+    
+    }
+    li{
+        margin: 8px;
+        font-size: 14;
+        font-weight: bold;
+    }
+    label{
+        font-size: 14;
+        font-weight: bold;
+    }
+ 
+    
+    #img{
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        background-color: transparent;
+        border: 5px solid #3CFE2E;
+        border-radius: 13px;
+        cursor: pointer;
+    }
+    button:hover{
+        border: 5px solid #CFF4D7;
+        
+    }
+
+    </style>
+</head>
+<body>
+ <script src="./index.js"></script>
+
+    <div id="img">   
+    <button onclick="cargadoDatos()">
+        <img id="super-title" src="https://upload.wikimedia.org/wikipedia/en/c/c8/Rick_and_Morty_logo.png" alt="title">
+    </button>
+    </div> 
+
+    <div class="full-container">
+        <div class="full-card">
+            <div class="card-information">
+                <img id="character1" class="character-image" alt="character">
+                <div class="card-text">
+                    <h4 id="name1"></h4>
+                    
+                    <ul>
+                        <li id="status">Status: <label for="status"></label></li>
+                        <li id="species">Species: <label for="species"></label></li>
+                        <li id="gender">Gender: <label for="gender"></label></li>
+                        <li id="location">Location: <label for="location"></label></li>
+                    </ul>
+                </div>
+        </div>
+     </div>
+
+ </div>
+    
+    
+</body>
+</html>
